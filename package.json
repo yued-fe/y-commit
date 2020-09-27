@@ -1,8 +1,11 @@
 {
   "name": "y-commit",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "husky, commitlint, git cz",
   "main": "index.js",
+  "bin": {
+    "y-commit": "./bin/y-commit.js"
+  },
   "repository": "git@github.com:yued-fe/y-commit.git",
   "author": "ziven27",
   "license": "MIT",
@@ -11,9 +14,9 @@
     "cz": "git add . && git cz"
   },
   "dependencies": {
-    "cz-conventional-changelog": "^3.3.0",
     "@commitlint/cli": "^11.0.0",
     "@commitlint/config-conventional": "^11.0.0",
+    "cz-conventional-changelog": "^3.3.0",
     "husky": "^4.3.0"
   },
   "husky": {
@@ -26,5 +29,9 @@
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
     }
+  },
+  "devDependencies": {
+    "fs-extra": "^9.0.1",
+    "path": "^0.12.7"
   }
 }
