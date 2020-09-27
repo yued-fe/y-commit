@@ -34,8 +34,7 @@ $ npm run cz
 
 ```bash
 $ npm i y-commit --dev
-# or
-$ yarn add y-commit --dev
+$ npx y-commit
 ```
 
 ## 配置 / Config
