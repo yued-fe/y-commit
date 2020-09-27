@@ -1,13 +1,13 @@
 {
-  "name": "y-lint",
+  "name": "y-commit",
   "version": "0.0.1",
   "description": "husky,commitlint, git cz",
   "main": "index.js",
-  "repository": "http://gitlab.inner.yuewen.local/yux/y-lint.git",
+  "repository": "git@github.com:yued-fe/y-commit.git",
   "author": "ziven27",
   "license": "MIT",
   "scripts": {
-    "lint-staged": "console.log('lint-staged')",
+    "lint-staged": "lint-staged",
     "cz": "git add . && git cz"
   },
   "devDependencies": {
