@@ -1,7 +1,7 @@
 {
   "name": "y-commit",
-  "version": "0.0.1",
-  "description": "husky,commitlint, git cz",
+  "version": "0.0.2",
+  "description": "husky, commitlint, git cz",
   "main": "index.js",
   "repository": "git@github.com:yued-fe/y-commit.git",
   "author": "ziven27",
@@ -10,7 +10,7 @@
     "lint-staged": "lint-staged",
     "cz": "git add . && git cz"
   },
-  "devDependencies": {
+  "dependencies": {
     "cz-conventional-changelog": "^3.3.0",
     "@commitlint/cli": "^11.0.0",
     "@commitlint/config-conventional": "^11.0.0",
