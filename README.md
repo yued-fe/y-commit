@@ -7,6 +7,9 @@
 [npm-badge-cz]: https://img.shields.io/npm/v/cz-conventional-changelog.svg
 [npm-url-cz]: https://www.npmjs.org/package/cz-conventional-changelog
 
+[npm-badge-commitizen]: https://img.shields.io/npm/v/commitizen.svg
+[npm-url-commitizen]: https://www.npmjs.org/package/commitizen
+
 [npm-badge-cli]: https://img.shields.io/npm/v/@commitlint/cli.svg
 [npm-url-cli]: https://www.npmjs.org/package/@commitlint/cli
 
@@ -19,12 +22,13 @@
 |包名| 地址 |
 |---|---|
 | husky |[![npm package][npm-badge-husky]][npm-url-husky]|
+| commitizen |[![npm package][npm-badge-commitizen]][npm-url-commitizen]|
 | cz-conventional-changelog |[![npm package][npm-badge-cz]][npm-url-cz]|
 | @commitlint/cli |[![npm package][npm-badge-cli]][npm-url-cli]|
 | @commitlint/config-conventional |[![npm package][npm-badge-config]][npm-url-config]|
 | conventional-changelog-cli |[![npm package][npm-badge-changelog]][npm-url-changelog]|
 
-安装了以上5个依赖。
+安装了以上6个依赖。
 
 原来提交需要:
 
