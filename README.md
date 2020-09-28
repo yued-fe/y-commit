@@ -1,11 +1,30 @@
 # y-commit
 
-1. [husky](https://www.npmjs.com/package/husky)
-2. [cz-conventional-changelog](https://www.npmjs.com/package/cz-conventional-changelog)
-3. [@commitlint/cli](https://www.npmjs.com/package/@commitlint/cli)
-4. [@commitlint/config-conventional](https://www.npmjs.com/package/@commitlint/config-conventional)
 
-安装了以上四个依赖。
+[npm-badge-husky]: https://img.shields.io/npm/v/husky.svg
+[npm-url-husky]: https://www.npmjs.org/package/husky
+
+[npm-badge-cz]: https://img.shields.io/npm/v/cz-conventional-changelog.svg
+[npm-url-cz]: https://www.npmjs.org/package/cz-conventional-changelog
+
+[npm-badge-cli]: https://img.shields.io/npm/v/@commitlint/cli.svg
+[npm-url-cli]: https://www.npmjs.org/package/@commitlint/cli
+
+[npm-badge-config]: https://img.shields.io/npm/v/@commitlint/config-conventional.svg
+[npm-url-config]: https://www.npmjs.org/package/@commitlint/config-conventional
+
+[npm-badge-changelog]: https://img.shields.io/npm/v/conventional-changelog-cli.svg
+[npm-url-changelog]: https://www.npmjs.org/package/conventional-changelog-cli
+
+|包名| 地址 |
+|---|---|
+| husky |[![npm package][npm-badge-husky]][npm-url-husky]|
+| cz-conventional-changelog |[![npm package][npm-badge-cz]][npm-url-cz]|
+| @commitlint/cli |[![npm package][npm-badge-cli]][npm-url-cli]|
+| @commitlint/config-conventional |[![npm package][npm-badge-config]][npm-url-config]|
+| conventional-changelog-cli |[![npm package][npm-badge-changelog]][npm-url-changelog]|
+
+安装了以上5个依赖。
 
 原来提交需要:
 
@@ -25,10 +44,9 @@ $ npm run cz  // 然后通过询问的方式选择提醒信息的类别，并输
 以后想要 `commit` 代码，只需要使用这个命令即可。
 
 ```bash
-$ npm run cz
+$ npm run cz  # 替换 git add . && git commit -m'feat: commit msg'
+$ npm run log # 添加日志
 ```
-
-> 原来需要 `git add . && git commit -m'feat: commit msg'`
 
 ## 安装 / Install
 
