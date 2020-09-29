@@ -19,54 +19,51 @@
 [npm-badge-changelog]: https://img.shields.io/npm/v/conventional-changelog-cli.svg
 [npm-url-changelog]: https://www.npmjs.org/package/conventional-changelog-cli
 
-|包名| 地址 |
-|---|---|
-| husky |[![npm package][npm-badge-husky]][npm-url-husky]|
-| commitizen |[![npm package][npm-badge-commitizen]][npm-url-commitizen]|
-| cz-conventional-changelog |[![npm package][npm-badge-cz]][npm-url-cz]|
-| @commitlint/cli |[![npm package][npm-badge-cli]][npm-url-cli]|
-| @commitlint/config-conventional |[![npm package][npm-badge-config]][npm-url-config]|
-| conventional-changelog-cli |[![npm package][npm-badge-changelog]][npm-url-changelog]|
+|包名| 地址 | 描述 |
+|---|---|---|
+| husky |[![npm package][npm-badge-husky]][npm-url-husky]| 增强 git commit |
+| commitizen |[![npm package][npm-badge-commitizen]][npm-url-commitizen]| 可视化的选择 commit 信息 |
+| cz-conventional-changelog |[![npm package][npm-badge-cz]][npm-url-cz]| 生成日志 |
+| conventional-changelog-cli |[![npm package][npm-badge-changelog]][npm-url-changelog]| 日志 CLI |
+| @commitlint/cli |[![npm package][npm-badge-cli]][npm-url-cli]| commitlint 规范  |
+| @commitlint/config-conventional |[![npm package][npm-badge-config]][npm-url-config]| commitlint 配置  |
 
-安装了以上6个依赖。
+安装了以上 6 个依赖。
 
-原来提交需要:
-
-```bash
-$ git add .
-$ git commit -m'feat: commit msg'
-```
-
-现在:
-
-```bash
-$ npm run cz  // 然后通过询问的方式选择提醒信息的类别，并输入提交信息
-```
 
 ## 使用 / use
+
+```bash
+$ yarn cz  # 相当于 git add . && git commit -m'feat: commit msg'
+```
 
 以后想要 `commit` 代码，只需要使用这个命令即可。
 
 ```bash
-$ npm run cz  # 替换 git add . && git commit -m'feat: commit msg'
-$ npm run log # 添加日志
+$ yarn log # 添加日志
 ```
+
+按照版本号自动生成 `CHANGELOG.md` 到你的工作根目录。
 
 ## 安装 / Install
 
 ```bash
-$ npm i y-commit --dev
-$ npx y-commit
+$ yarn add y-commit --dev
 ```
 
 ## 配置 / Config
 
-添加以下配置到 `package.json`
+```bash
+$ npx y-commit
+```
+
+安装好插件之后，只需要跑一下这个命令，就会增量的，添加以下配置到你的项目 `package.json`中。
 
 ```json
 {
   "scripts": {
-    "cz": "git add . && git cz"
+    "cz": "git add . && git cz",
+     "log": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0 && git add CHANGELOG.md"
   },
   "husky": {
     "hooks": {
@@ -82,8 +79,8 @@ $ npx y-commit
 }
 ```
 
-拷贝配置以下文件到 `package.json` 文件夹。
+并拷贝 `commitlint.config.js`文件到 `package.json` 文件夹相同目录。
 
-`commitlint.config.js`
+
 
 
