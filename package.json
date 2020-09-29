@@ -1,6 +1,6 @@
 {
   "name": "y-commit",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "husky, commitlint, git cz",
   "main": "index.js",
   "bin": {
@@ -20,7 +20,8 @@
     "commitizen": "^4.2.1",
     "conventional-changelog-cli": "^2.1.0",
     "cz-conventional-changelog": "^3.3.0",
-    "husky": "^4.3.0"
+    "husky": "^4.3.0",
+    "lint-staged": "^10.4.0"
   },
   "husky": {
     "hooks": {
