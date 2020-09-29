@@ -81,7 +81,7 @@ $ npx y-commit
   },
   "config": {
     "commitizen": {
-      "path": "./node_modules/cz-conventional-changelog"
+      "path": "./node_modules/y-commit/node_modules/cz-conventional-changelog"
     }
   }
 }
