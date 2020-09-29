@@ -1,5 +1,5 @@
-# y-commit
-
+[npm-badge-y]: https://img.shields.io/npm/v/y-commit.svg
+[npm-url-y]: https://www.npmjs.org/package/y-commit
 
 [npm-badge-husky]: https://img.shields.io/npm/v/husky.svg
 [npm-url-husky]: https://www.npmjs.org/package/husky
@@ -18,6 +18,14 @@
 
 [npm-badge-changelog]: https://img.shields.io/npm/v/conventional-changelog-cli.svg
 [npm-url-changelog]: https://www.npmjs.org/package/conventional-changelog-cli
+
+
+# y-commit
+
+[![npm package][npm-badge-y]][npm-url-y]
+
+提交规范合集。
+
 
 |包名| 地址 | 描述 |
 |---|---|---|
