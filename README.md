@@ -19,25 +19,25 @@
 [npm-badge-changelog]: https://img.shields.io/npm/v/conventional-changelog-cli.svg
 [npm-url-changelog]: https://www.npmjs.org/package/conventional-changelog-cli
 
+[npm-badge-lint]: https://img.shields.io/npm/v/lint-staged.svg
+[npm-url-lint]: https://www.npmjs.org/package/lint-staged
+
 
 # y-commit
 
 [![npm package][npm-badge-y]][npm-url-y]
 
-提交规范合集。
-
-
 |包名| 地址 | 描述 |
 |---|---|---|
 | husky |[![npm package][npm-badge-husky]][npm-url-husky]| 增强 git commit |
+| lint-staged |[![npm package][npm-badge-lint]][npm-url-lint]| 只校验提交的代码 |
 | commitizen |[![npm package][npm-badge-commitizen]][npm-url-commitizen]| 可视化的选择 commit 信息 |
 | cz-conventional-changelog |[![npm package][npm-badge-cz]][npm-url-cz]| 生成日志 |
 | conventional-changelog-cli |[![npm package][npm-badge-changelog]][npm-url-changelog]| 日志 CLI |
 | @commitlint/cli |[![npm package][npm-badge-cli]][npm-url-cli]| commitlint 规范  |
 | @commitlint/config-conventional |[![npm package][npm-badge-config]][npm-url-config]| commitlint 配置  |
 
-安装了以上 6 个依赖。
-
+提交规范合集， 安装了以上所有依赖。
 
 ## 使用 / use
 
