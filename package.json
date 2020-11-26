@@ -10,7 +10,6 @@
   "author": "ziven27",
   "license": "MIT",
   "scripts": {
-    "lint-staged": "lint-staged",
     "cz": "git add . && git cz",
     "log": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0 && git add CHANGELOG.md"
   },
@@ -20,14 +19,17 @@
     "commitizen": "^4.2.1",
     "conventional-changelog-cli": "^2.1.0",
     "cz-conventional-changelog": "^3.3.0",
-    "husky": "^4.3.0",
-    "lint-staged": "^10.4.0"
+    "lint-staged": "^10.4.0",
+    "yorkie": "^2.0.0"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged",
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
-    }
+  "lint-staged": {
+    "lib/*.js": [
+      "echo 'hello world!'"
+    ]
+  },
+  "gitHooks": {
+    "pre-commit": "lint-staged",
+    "commit-msg": "commitlint -E GIT_PARAMS"
   },
   "config": {
     "commitizen": {
