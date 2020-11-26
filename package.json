@@ -24,7 +24,7 @@
   },
   "lint-staged": {
     "lib/*.js": [
-      "echo 'hello world!'"
+      "echo 'hello wolrld!'"
     ]
   },
   "gitHooks": {
